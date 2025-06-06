@@ -19,7 +19,6 @@ public class FitnessClassDemo {
         userService.bookFitnessClass("ravi@gcom", FitnessClassType.DANCE);
         userService.bookFitnessClass("nikhil@gcom", FitnessClassType.GYM);
 
-
         // Attempt to book a class that is full
         try {
             userService.bookFitnessClass("ravi@gcom", FitnessClassType.YOGA);

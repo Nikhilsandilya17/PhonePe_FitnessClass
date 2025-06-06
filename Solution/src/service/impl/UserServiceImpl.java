@@ -27,7 +27,7 @@ import static constants.ApplicationConstants.USER_NOT_FOUND;
 
 public class UserServiceImpl implements UserService {
 
-    private static UserServiceImpl instance;
+    private static UserService instance;
     private final UserRepository userRepository;
     private final FitnessClassFactory fitnessClassFactory;
 
@@ -36,7 +36,7 @@ public class UserServiceImpl implements UserService {
         fitnessClassFactory = new FitnessClassFactory();
     }
 
-    public static UserServiceImpl getInstance() {
+    public static UserService getInstance() {
         if (instance == null) {
             instance = new UserServiceImpl();
         }
